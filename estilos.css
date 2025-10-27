@@ -125,3 +125,57 @@ footer{ border-top: 3px solid var(--prim); }
   .qs-img { height: 120px; }
   .logo-asoc { max-height: 96px; }
 }
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+  /* reducir padding del header en pantallas medianas/pequeñas */
+  #inicio {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  /* texto principal más pequeño en tablet/móvil */
+  .display-5 {
+    font-size: 2rem;
+  }
+}
+
+/* móviles */
+@media (max-width: 576px) {
+  /* header y hero: más compactos */
+  #inicio {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+  }
+  .display-5 {
+    font-size: 1.6rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  /* logo más pequeño y centrado */
+  .logo-asoc {
+    max-height: 96px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  /* sección títulos más compactos */
+  .section-title {
+    font-size: 1.25rem;
+    padding-left: 10px;
+    border-left-width: 5px;
+  }
+  /* asegurar que botones dentro de tarjetas ocupen todo el ancho cuando se necesite */
+  .card .btn {
+    width: 100%;
+  }
+  /* Galería: imágenes menos altas para pantallas pequeñas */
+  .qs-img { height: 120px; }
+  .gal-img { height: 140px; }
+}
+
+/* ocultar hero-card en pantallas pequeñas (ya usamos d-none d-lg-block en HTML,
+   esta regla solo aporta seguridad si se cambia el HTML) */
+@media (max-width: 991px) {
+  .hero-card { display: none !important; }
+}

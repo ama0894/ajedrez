@@ -39,14 +39,15 @@
           <img src="imagenes/logoajedrez2.jpg" alt="Logo Asociación de Ajedrez" class="logo-asoc mb-3" />
           <h1 class="display-5 fw-bold">Asociación de Ajedrez de Villa Constitución</h1>
           <p class="lead">Difundimos actividades, organizamos torneos y fomentamos la comunidad ajedrecística.</p>
-          <!-- botones de ejemplo -->
-          <div class="d-flex gap-3 flex-wrap">
-            <a href="#" class="btn btn-primary btn-lg" role="button" aria-disabled="true" title="Botón de ejemplo">Inscribirme a un torneo</a>
-            <a href="#" class="btn btn-outline-light btn-lg" role="button" aria-disabled="true" title="Botón de ejemplo">Asociarme</a>
+          <!-- botones de ejemplo: full width en móviles, auto en md+ -->
+          <div class="d-grid gap-2 d-md-flex">
+            <a href="#" class="btn btn-primary btn-lg w-100 w-md-auto" role="button" aria-disabled="true" title="Botón de ejemplo">Inscribirme a un torneo</a>
+            <a href="#" class="btn btn-outline-light btn-lg w-100 w-md-auto" role="button" aria-disabled="true" title="Botón de ejemplo">Asociarme</a>
           </div>
         </div>
         <div class="col-lg-5">
-          <div class="hero-card p-4 bg-dark-subtle rounded-4">
+          <!-- "Próximo Torneo" se oculta en pantallas <992px para simplificar hero -->
+          <div class="hero-card p-4 bg-dark-subtle rounded-4 d-none d-lg-block">
             <h2 class="h4 mb-3">Próximo Torneo</h2>
             <ul class="list-unstyled mb-3">
               <li><strong>Fecha:</strong> 15/12</li>
@@ -81,18 +82,18 @@
       <div class="mt-4">
         <h3 class="h5 mb-3">Galería</h3>
         <div class="row g-3">
-          <!-- fotos -->
+          <!-- fotos: img-fluid para comportamiento responsive -->
           <div class="col-6 col-md-4 col-lg-3">
-            <img class="qs-img" src="imagenes/quienes/1.jpg" alt="Foto 1 - Asociación" />
+            <img class="qs-img img-fluid" src="imagenes/quienes/1.jpg" alt="Foto 1 - Asociación" />
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <img class="qs-img" src="imagenes/quienes/2.jpg" alt="Foto 2 - Asociación" />
+            <img class="qs-img img-fluid" src="imagenes/quienes/2.jpg" alt="Foto 2 - Asociación" />
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <img class="qs-img" src="imagenes/quienes/3.jpg" alt="Foto 3 - Asociación" />
+            <img class="qs-img img-fluid" src="imagenes/quienes/3.jpg" alt="Foto 3 - Asociación" />
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <img class="qs-img" src="imagenes/quienes/4.jpg" alt="Foto 4 - Asociación" />
+            <img class="qs-img img-fluid" src="imagenes/quienes/4.jpg" alt="Foto 4 - Asociación" />
           </div>
         </div>
       </div>
@@ -175,10 +176,9 @@
               <!-- inscripción -->
               <h3 class="h5 mb-3">Inscripción</h3>
               <p class="mb-3">Para inscribirte, presioná el siguiente botón (ejemplo). Luego, si corresponde, pasá al pago online.</p>
-              <div class="d-flex flex-wrap gap-3">
-                <!-- botón inscripción -->
-                <a href="#" class="btn btn-primary" role="button" aria-disabled="true" title="Botón de ejemplo">Abrir formulario de inscripción</a>
-                <a class="btn btn-outline-primary" href="#pago-online">Ir a pagar</a>
+              <div class="d-grid gap-2 d-md-flex">
+                <a href="#" class="btn btn-primary w-100 w-md-auto" role="button" aria-disabled="true" title="Botón de ejemplo">Abrir formulario de inscripción</a>
+                <a class="btn btn-outline-primary w-100 w-md-auto" href="#pago-online">Ir a pagar</a>
               </div>
             </div>
           </div>
@@ -189,7 +189,7 @@
           <div class="card shadow-sm">
             <div class="card-body">
               <h3 class="h5 mb-3">Pago Online</h3>
-              <p class="mb-2">Paso 2 (opcional): botón de ejemplo de pago.</p>
+              <p class="mb-2">Paso 2: botón de ejemplo de pago.</p>
               <a href="#" class="btn btn-success w-100 mb-2" role="button" aria-disabled="true" title="Botón de ejemplo">Pagar con Mercado Pago</a>
               <div class="alert alert-info small mb-0">Ejemplo para presentación. En producción, este botón abrirá el pago correspondiente.</div>
             </div>
@@ -220,9 +220,9 @@
             <div class="card-body">
               <h3 class="h5 mb-3">Contacto directo</h3>
               <p class="mb-3">Elegí un canal para comunicarte con la Asociación.</p>
-              <div class="d-flex flex-wrap gap-3">
-                <a href="mailto:contacto@asociacionajedrez.org?subject=Consulta%20desde%20la%20web&body=Hola%2C%20quisiera%20hacer%20una%20consulta%20sobre..." class="btn btn-primary">Enviar email</a>
-                <a href="https://wa.me/5491100000000?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20sobre..." target="_blank" rel="noopener" class="btn btn-outline-primary">Enviar WhatsApp</a>
+              <div class="d-grid gap-2 d-sm-flex">
+                <a href="mailto:contacto@asociacionajedrez.org?subject=Consulta%20desde%20la%20web" class="btn btn-primary w-100 w-sm-auto">Enviar email</a>
+                <a href="https://wa.me/5491100000000?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20sobre..." target="_blank" rel="noopener" class="btn btn-outline-primary w-100 w-sm-auto">Enviar WhatsApp</a>
               </div>
             </div>
           </div>
